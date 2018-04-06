@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_dark"
+    tools:context="com.example.tulsi.trackingapp.MainActivity">
+
+
+    <ImageView
+        android:id="@+id/satelit_id"
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:contentDescription="@string/image_satelit"
+        android:src="@drawable/satelit" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:fontFamily="@font/lobster"
+        android:layout_marginTop="139dp"
+        android:text="Location Tracker"
+        android:textAllCaps="true"
+        android:textSize="30sp"
+        android:textColor="@android:color/background_light" />
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/button_sign_in"
+        android:layout_alignStart="@+id/button_sign_in"
+        android:layout_marginBottom="87dp"
+        android:fontFamily="serif"
+        android:text="We follow where ever you go
+"
+        android:textColor="@android:color/background_light"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button_sign_in"
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button_sign_up"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="47dp"
+        android:background="@color/colorSatelit"
+        android:onClick="Signin"
+        android:text="@string/sign_in"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/button_sign_up"
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/button_sign_in"
+        android:layout_marginBottom="39dp"
+        android:onClick="Signup"
+        android:background="@color/colorSatelit"
+        android:text="@string/sign_up"
+        android:textColor="@android:color/white" />
+</RelativeLayout>
