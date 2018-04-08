@@ -42,15 +42,38 @@
         android:textSize="25sp" />
 
     <Button
-        android:id="@+id/button_start_tracking"
+        android:id="@+id/button"
         android:layout_width="200sp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/text2"
-        android:layout_centerInParent="true"
-        android:onClick="Tracking"
-        android:layout_marginTop="120sp"
+        android:layout_alignEnd="@+id/text1"
+        android:layout_below="@+id/Location"
+        android:layout_marginEnd="13dp"
+        android:layout_marginTop="48dp"
         android:background="@color/colorSatelit"
-        android:text="@string/start_tracking"
+        android:onClick="Tracking"
+        android:text="@string/fetch_location"
         android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/Location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fetching Location: "
+        android:layout_below="@+id/text2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:textColor="@android:color/background_light" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/button"
+        android:layout_below="@+id/button"
+        android:onClick="Map"
+        android:layout_marginTop="44dp"
+        android:background="@color/colorSatelit"
+        android:text="Show in Map"
+        android:textColor="@android:color/background_light" />
 
 </RelativeLayout>

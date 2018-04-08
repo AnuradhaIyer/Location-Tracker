@@ -24,11 +24,12 @@
     <string name="label_sign_in">Sign In</string>
     <string name="welcome">Welcome to Trackids</string>
     <string name="hint_password_confirmation">Password confirmation</string>
-    <string name="start_tracking">Start Tracking</string>
+    <string name="fetch_location">Fetch Location </string>
     <string name="app_slogan">Keep Your Children in Your Hands</string>
     <string name="title_activity_maps">Map</string>
     <string name="select_child">Select Child</string>
     <string name="label_select_child">Select Child</string>
     <string name="switch_child">Switch Child</string>
     <string name="image_satelit">Satelit</string>
+    <string name="start_tracking">Show in Map </string>
 </resources>
