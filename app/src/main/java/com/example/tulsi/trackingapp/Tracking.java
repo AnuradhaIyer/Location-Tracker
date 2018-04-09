@@ -16,12 +16,13 @@ public class Tracking extends AppCompatActivity {
 
     private Button btnShowLocation,btnshowMap;
     FirebaseDatabase database;
-    DatabaseReference myRef;
+    DatabaseReference myRef= database.getReference("Location");;
 
     private static final  int REQUEST_CODE_PERMISSION =2;
     String mPermission = android.Manifest.permission.ACCESS_FINE_LOCATION;
     GPSTracker gps;
     TextView location;
+    String value =null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,6 +41,7 @@ public class Tracking extends AppCompatActivity {
         btnShowLocation.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 gps = new GPSTracker(Tracking.this);
                 location=(TextView)findViewById(R.id.Location);
                 if (gps.canGetLocation()){
