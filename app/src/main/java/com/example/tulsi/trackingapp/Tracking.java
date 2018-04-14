@@ -16,7 +16,7 @@ public class Tracking extends AppCompatActivity {
 
     private Button btnShowLocation,btnshowMap;
     FirebaseDatabase database;
-    DatabaseReference myRef= database.getReference("Location");;
+    DatabaseReference myRef;
 
     private static final  int REQUEST_CODE_PERMISSION =2;
     String mPermission = android.Manifest.permission.ACCESS_FINE_LOCATION;

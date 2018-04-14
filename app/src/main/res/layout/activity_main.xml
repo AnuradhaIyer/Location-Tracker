@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/background_dark"
+    android:background="@drawable/background"
     tools:context="com.example.tulsi.trackingapp.MainActivity">
 
 
@@ -16,7 +16,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="12dp"
         android:contentDescription="@string/image_satelit"
-        android:src="@drawable/satelit" />
+        android:src="@drawable/placeholder4" />
 
     <TextView
         android:id="@+id/textView"
@@ -24,26 +24,26 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:textStyle="bold"
-        android:fontFamily="@font/lobster"
         android:layout_marginTop="139dp"
+        android:fontFamily="@font/lobster"
         android:text="Location Tracker"
         android:textAllCaps="true"
+        android:textColor="@color/colorPrimary"
         android:textSize="30sp"
-        android:textColor="@android:color/background_light" />
+        android:textStyle="bold" />
 
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/button_sign_in"
-        android:layout_alignStart="@+id/button_sign_in"
-        android:layout_marginBottom="87dp"
+        android:layout_below="@+id/satelit_id"
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginTop="24dp"
         android:fontFamily="serif"
-        android:text="We follow where ever you go
-"
-        android:textColor="@android:color/background_light"
+        android:text="Track your Family and friends Real Time"
+        android:textColor="@color/colorPrimary"
         android:textStyle="bold" />
 
     <Button
@@ -65,8 +65,8 @@
         android:layout_alignParentBottom="true"
         android:layout_alignStart="@+id/button_sign_in"
         android:layout_marginBottom="39dp"
-        android:onClick="Signup"
         android:background="@color/colorSatelit"
+        android:onClick="Signup"
         android:text="@string/sign_up"
         android:textColor="@android:color/white" />
 </RelativeLayout>

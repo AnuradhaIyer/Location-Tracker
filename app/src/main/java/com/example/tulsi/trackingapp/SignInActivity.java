@@ -40,7 +40,7 @@ public class SignInActivity extends AppCompatActivity {
 
                 if (firebaseAuth.getCurrentUser() != null) {
 
-                    Intent intent = new Intent(getApplicationContext(), Tracking.class);
+                    Intent intent = new Intent(getApplicationContext(), Main2Activity.class);
                     startActivity(intent);
 
                 } /*else if (firebaseAuth.getCurrentUser() == null) {

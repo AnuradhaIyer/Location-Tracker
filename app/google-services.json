@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "789098671178",
+   "firebase_url": "https://trakingapp-556e8.firebaseio.com",
+    "project_id": "trakingapp-556e8",
+    "storage_bucket": "trakingapp-556e8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:789098671178:android:3d1926bca0274f49",
+        "android_client_info": {
+          "package_name": "com.example.tulsi.trackingapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "789098671178-mrdt9agt7bo4b0tooc2ivkdvn363guef.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.tulsi.trackingapp",
+            "certificate_hash": "5d1fc39b617afd97dfba455091e1a1883f2ea03d"
+          }
+        },
+        {
+          "client_id": "789098671178-ib63hkv50pvei43d9qskivogdhok9h1c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWnVVfnTQ6RW3CJHk5QI4V0dU4-l-vqaI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "789098671178-ib63hkv50pvei43d9qskivogdhok9h1c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+} 

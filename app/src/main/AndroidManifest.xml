@@ -9,6 +9,7 @@
     <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
 
     <application
         android:allowBackup="true"
@@ -41,7 +42,19 @@
 
         <activity
             android:name=".MapsActivity"
-            android:label="@string/title_activity_maps"></activity>
+            android:label="@string/title_activity_maps" />
+        <activity
+            android:name=".Main2Activity"
+            android:label="@string/title_activity_main2"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".Contact" />
+        <activity
+            android:name=".Messenger"
+            android:label="@string/title_activity_messenger"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".Alarm" />
+        <activity android:name=".GridActivity" />
+        <activity android:name=".ProfileActivity"></activity>
     </application>
 
 </manifest>

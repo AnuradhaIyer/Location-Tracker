@@ -8,6 +8,7 @@ import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
@@ -40,13 +41,17 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mMap = googleMap;
 
         // Add a marker in Sydney and move the camera
-        LatLng sydney = new LatLng(37.391219,-121.982070);
-        mMap.addMarker(new MarkerOptions().position(sydney).title("Anuradha's location"));
+        LatLng sydney = new LatLng(37.391219,-121.930);
+        MarkerOptions marker = new MarkerOptions().position(sydney).title("Anuradha Rajashekar");
+       marker.icon(BitmapDescriptorFactory.fromResource(R.drawable.userplaceholder));
+        mMap.addMarker(marker);
+       // mMap.addMarker(new MarkerOptions().position(sydney).title("Anuradha's location"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
+        mMap.animateCamera(CameraUpdateFactory.zoomTo(17.0f));
 
-        LatLng location2 = new LatLng(37.402276,-121.942161);
+      /*  LatLng location2 = new LatLng(37.402276,-121.942161);
         mMap.addMarker(new MarkerOptions().position(location2).title("Anuradha's new location"));
-       mMap.moveCamera(CameraUpdateFactory.newLatLng(location2));
+       mMap.moveCamera(CameraUpdateFactory.newLatLng(location2));*/
 
         //zoom into a particular position
         CameraUpdate zoom = CameraUpdateFactory.zoomTo(12);
