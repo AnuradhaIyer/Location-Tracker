@@ -51,3 +51,8 @@ Without an API key the Google Maps map won't render anything.
 5.	Android Gradle version 4.1
 
 6.	Material Design for UI componets.
+
+
+# Future Enhancements
+
+1. Add more features for tracking Anomoly when the location is unusual.
